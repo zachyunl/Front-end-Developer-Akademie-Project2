@@ -83,13 +83,13 @@ addCountry("", countries);
 // třetí část
 // ------------------------------------------------------------------------------------------
 function removeCountry(country, countries) {
-  // zkontrolujeme zda je zadaná krajina validní
+  // ověření, zda je zadaná krajina platná
   if (typeof country !== "string" || country.length === 0) {
     console.log(`Zadali jste neplatný dotaz: ${country}.`);
     return;
   }
 
-  // zjistíme, zda se krajina nachází v seznamu
+  // ověření, zda se krajina nachází v seznamu
   const index = countries.indexOf(country);
   if (index !== -1) {
     // krajina se nachází v seznamu, odstraníme ji
